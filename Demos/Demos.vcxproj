@@ -151,7 +151,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Resources\Shaders\Fragment.shader" />
+    <None Include="Source\Resources\Shaders\Geometry.shader" />
     <None Include="Source\Resources\Shaders\Vertex.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Log.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

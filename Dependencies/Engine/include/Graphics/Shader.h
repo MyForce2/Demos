@@ -21,6 +21,7 @@ namespace Engine {
 
 		public:
 			Shader(const std::string& vertexPath, const std::string& fragmentPath);
+			Shader(const std::string& vertexPath, const std::string& geometryPath, const std::string& fragmentPath);
 			~Shader();
 
 			// Sets this shader as the active program (Bound shader)
@@ -49,6 +50,8 @@ namespace Engine {
 			static GLuint compileShader(GLuint type, const std::string& source);
 			// Creates a program with the two shaders attached, and returns its id
 			static GLuint createProgram(const std::string& vertexSource, const std::string& fragmentSource);
+			// Creates a program with the three shaders attached, and returns its id
+			static GLuint createProgram(const std::string& vertexSource, const std::string& geometrySource, const std::string& fragmentSource);
 			// Returns the location in memory of the given uniform
 			GLint getUniformLocation(const std::string& name) const;
 		};

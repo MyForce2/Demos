@@ -35,11 +35,14 @@ int main() {
 	BasicRenderer r;
 	std::string k = "Source//Resources//Shaders//Vertex.shader";
 	std::string b = "Source//Resources//Shaders//Fragment.shader";
+	Mat4 vp = c.getProjectionMatrix() * c.getViewMatrix();
 	Shader shader(k, b);
 	shader.bind();
-	Mat4 vp = c.getProjectionMatrix() * c.getViewMatrix();
 	shader.setUniformMatrix4fv("u_VP", vp);
 	while (window.isKeyReleased(GLFW_KEY_ESCAPE) && !window.isClosed()) {
+		shader.setUniformMatrix4fv("u_Model", Mat4(1.0f));
+		r.renderArrays(vao, shader, 0, 36);
+		shader.setUniformMatrix4fv("u_Model", Mat4::translation(Vec3(2.0, 0.0, 2.0)));
 		r.renderArrays(vao, shader, 0, 36);
 		c.update(window, timer.getTimePassed());
 		timer.reset();

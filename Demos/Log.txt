@@ -1,4 +1,4 @@
-Log started on : Sun Feb 10 23:49:57 2019
-[Sun Feb 10 23:49:57 2019] [Info] Created OpenGL program : 
-[Sun Feb 10 23:49:57 2019] [Info] Vertex path : Source//Resources//Shaders//Vertex.shader
-[Sun Feb 10 23:49:57 2019] [Info] Fragment path : Source//Resources//Shaders//Fragment.shader
+Log started on : Mon Feb 11 15:25:30 2019
+[Mon Feb 11 15:25:30 2019] [Info] Created OpenGL program : 
+[Mon Feb 11 15:25:30 2019] [Info] Vertex path : Source//Resources//Shaders//Vertex.shader
+[Mon Feb 11 15:25:30 2019] [Info] Fragment path : Source//Resources//Shaders//Fragment.shader

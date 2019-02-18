@@ -36,5 +36,9 @@
   <ItemGroup>
     <None Include="Source\Resources\Shaders\Vertex.shader" />
     <None Include="Source\Resources\Shaders\Fragment.shader" />
+    <None Include="Source\Resources\Shaders\Geometry.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Log.txt" />
   </ItemGroup>
 </Project>
